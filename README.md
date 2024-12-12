@@ -8,13 +8,9 @@ In the GeoGame project, I used the Leaflet.js library to create interactive maps
 
 I initially focused the map on the center of Turkey (Ankara):
 
-javascript
-Kodu kopyala
 const map = L.map(mapElement).setView([39.9334, 32.8597], 6);
 I dynamically added markers to show the locations of cities to the user:
 
-javascript
-Kodu kopyala
 L.marker(currentCity.coords).addTo(map);
 Thanks to this library, the game became more interactive and fun for users.
 
@@ -24,20 +20,14 @@ I used three important event listeners in my project:
 Game Start:
 When the user clicks the "Start Game" button, the game resets and a new city is loaded:
 
-javascript
-Kodu kopyala
 startButton.addEventListener('click', startGame);
 Answer Checking:
 When the user clicks the "Submit Answer" button, a function is executed to check the answer entered by the user:
 
-javascript
-Kodu kopyala
 submitButton.addEventListener('click', checkAnswer);
 Timer:
 The timer monitors the time during the game and ends the game when the time runs out:
 
-javascript
-Kodu kopyala
 timerInterval = setInterval(() => { ... }, 1000);
 These event listeners provide the core functionality of the game.
 
@@ -46,8 +36,6 @@ A closure is an inner function that retains access to the outer function’s var
 
 The currentCity variable works as a closure and retains the city information until the next city is loaded:
 
-javascript
-Kodu kopyala
 function loadRandomCity(map) {
     const randomIndex = Math.floor(Math.random() * cities.length);
     currentCity = cities[randomIndex]; // Works as a closure
@@ -66,12 +54,9 @@ Interaction with the DOM
 DOM manipulation played a crucial role in keeping the user interface up-to-date. For example:
 
 Showing Questions:
-javascript
-Kodu kopyala
 questionElement.textContent = currentCity.question;
 Updating Score and Lives:
-javascript
-Kodu kopyala
+
 scoreElement.textContent = score;
 livesElement.textContent = lives;
 These methods allowed me to provide real-time feedback to the user.

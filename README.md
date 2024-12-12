@@ -76,7 +76,8 @@ Implemented score and lives tracking
 Integrated Leaflet.js for map functionality
 This method helped me track the progress of my code more systematically.
 
-Conclusion: This project helped me enhance my skills in JavaScript, Leaflet.js, and DOM manipulation technologies. It also taught me the nuances of designing a game that enhances user interaction.
+Conclusion:
+This project helped me enhance my skills in JavaScript, Leaflet.js, and DOM manipulation technologies. It also taught me the nuances of designing a game that enhances user interaction.
 
 Through this process, I reinforced my software development skills using advanced JavaScript features such as event listeners and closures. By integrating an external library like Leaflet.js, I gained expertise in map-based applications. Additionally, working with AI tools sped up my problem-solving process and added a new dimension to my learning experience. The GeoGame project, with its technical aspects and focus on user experience, broadened my perspective on software design.
 
